@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+".\objects\main.o"
+".\objects\nvic.o"
+".\objects\systick.o"
+".\objects\led.o"
+".\objects\usart.o"
+".\objects\tim_octigr.o"
+".\objects\adc_dma.o"
+".\objects\button.o"
+".\objects\spi.o"
+".\objects\nrf.o"
+".\objects\deal_datapacket.o"
+".\objects\senddata.o"
+".\objects\misc.o"
+".\objects\stm32f10x_adc.o"
+".\objects\stm32f10x_dma.o"
+".\objects\stm32f10x_exti.o"
+".\objects\stm32f10x_gpio.o"
+".\objects\stm32f10x_rcc.o"
+".\objects\stm32f10x_spi.o"
+".\objects\stm32f10x_tim.o"
+".\objects\stm32f10x_usart.o"
+".\objects\startup_stm32f10x_md.o"
+".\objects\system_stm32f10x.o"
+--library_type=microlib --strict --scatter ".\Objects\RemoteControl.sct"
+--summary_stderr --info summarysizes --map --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\Listings\RemoteControl.map" -o .\Objects\RemoteControl.axf
